@@ -1,0 +1,46 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+span {
+    font-weight: bold;
+    font-size: 32px;
+}
+
+header {
+    width: 100%;
+    border-bottom: 2px solid black;
+    padding-bottom: 20px;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    margin-top: 90px;
+}
+
+nav {
+    margin-left: 100px;
+    max-width: 280px;
+}
+
+header span, 
+header nav {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+a {
+    text-decoration: none;
+    padding-left: 15px;
+    color: green;
+    font-size: 14px;
+}
+
+h1 {
+    font-weight: 300;
+}
+
+section p {
+    font-size: 12px;
+}

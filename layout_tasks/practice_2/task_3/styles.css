@@ -1,0 +1,26 @@
+table {
+    margin: auto;
+    border-collapse: collapse;
+    margin-top: 120px;
+    width: 90%;
+}
+
+table, th, td {
+    border: 1px solid rgb(222,222,222);
+    text-align: left;
+    padding: 5px;
+}
+
+tr th {
+    background-color: rgba(122, 112, 112, 0.5);
+    color: #000;
+}
+
+tr:nth-child(even) {
+    background: #f2f2f2;
+}
+  
+tr:hover td{
+    background: #000;
+    color: #fff;
+}

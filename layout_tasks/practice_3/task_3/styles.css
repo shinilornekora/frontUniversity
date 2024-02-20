@@ -1,0 +1,14 @@
+body {
+    background: rgb(237, 237, 237);
+    color: rgb(50, 50, 50);
+}
+
+article {
+    width: 840px;
+    margin: auto;
+}
+
+img {
+    width: 500px;
+    height: 400px;
+}

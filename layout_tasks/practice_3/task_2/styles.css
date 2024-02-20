@@ -1,0 +1,11 @@
+section {
+    border: 4px dotted aquamarine;
+    text-align: center;
+    width: 250px;
+    height: 250px;
+}
+
+p {
+    border: 5px solid blue;
+    padding: 20px;  
+}

@@ -1,0 +1,28 @@
+body {
+    background: #f2f2f2;
+    text-align: center; 
+    width: 800px;
+    margin: 0 auto;
+}
+
+.gallery {
+    list-style: none; 
+    padding: 0;
+}
+
+li {
+    border: 0.4rem solid black;
+    display: inline-block;
+    margin: 5px 10px;
+    min-width: 0;
+    padding: 10px;
+    text-align: left;
+    transform: translateY(50%);
+}
+
+img {
+    max-width: 200px;
+    max-height: 1000px;
+    display: block;
+    margin: 0 auto; 
+}
