@@ -8,6 +8,7 @@ table {
     margin: auto;
     transform: translateY(100px);
     text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 table {
@@ -16,11 +17,8 @@ table {
 }
 
 td, th {
+    padding: 10px;
     border: 1px solid lightgray;
-}
-
-tr {
-    padding-top: 15px !important;
 }
 
 th {
