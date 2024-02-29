@@ -6,6 +6,11 @@ html, body {
 
 section {
     margin: 100px;
+    box-shadow: 0 0 8px 8px rgba(211,211,211, 0.7);
+    max-width: 500px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    background-color: #fff;
 }
 
 section, .container {
@@ -14,21 +19,32 @@ section, .container {
 }
 
 img {
-    max-width: 250px;
-    max-height: 100px;
+    max-width: 500px;
+    max-height: 200px;
 }
 
-section {
-    max-width: 250px;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #fff;
-}
-
-button {
-    max-width: 80px;
+.button {
+    position: relative;
     float: right;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: green;
 }
 
 .container {
-    padding: 0 10px;
+    padding: 0 20px 20px 20px;
+}
+
+@media (max-width: 400px) {
+    img {
+        max-width: 250px;
+        max-height: 100px;
+    }
+
+    section {
+        max-width: 250px;
+        margin: 50px;
+    }
 }
