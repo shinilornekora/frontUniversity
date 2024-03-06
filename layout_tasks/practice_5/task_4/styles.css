@@ -34,7 +34,31 @@ tr:nth-child(odd) {
     background-color: #fff;
 }
 
-
-
-
 /* forsee*/
+
+@media (max-width: 768px) {
+    table {
+        display: block;
+    }
+
+    tr {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    th, td {
+        display: block;
+    }
+
+    th {
+        background-color: black;
+        color: white;
+        padding: 10px;
+    }
+
+    td {
+        background-color: #fff;
+        padding: 10px;
+    }
+}
+
