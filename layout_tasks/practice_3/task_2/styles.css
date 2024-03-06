@@ -1,11 +1,16 @@
 section {
-    border: 4px dotted aquamarine;
+    outline: 4px dotted aquamarine;
     text-align: center;
     width: 250px;
     height: 250px;
+    z-index: 0
 }
 
 p {
-    border: 5px solid blue;
-    padding: 20px;  
+    position: relative;
+    outline: 5px solid blue; 
+    width: 100%;
+    z-index: 1;
+    padding: 20px 0;
 }
+
