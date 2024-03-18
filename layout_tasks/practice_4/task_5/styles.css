@@ -29,7 +29,7 @@ ul {
 .mansory {
     flex-direction: column;
     flex-wrap: wrap;
-    max-height: 2000px;
+    min-height: 2000px;
     justify-content: left;
 }
 
