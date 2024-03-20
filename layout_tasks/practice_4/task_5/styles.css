@@ -29,7 +29,9 @@ ul {
 .mansory {
     flex-direction: column;
     flex-wrap: wrap;
-    min-height: 2000px;
+    gap: 0;
+    min-height: 1750px;
+    max-height: calc(100vh - 200vw);
     justify-content: left;
 }
 
@@ -37,6 +39,7 @@ ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 35px;
 }
 
 img {
