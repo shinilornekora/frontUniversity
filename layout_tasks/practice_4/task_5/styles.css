@@ -29,9 +29,11 @@ ul {
 .mansory {
     flex-direction: column;
     flex-wrap: wrap;
-    gap: 0;
-    min-height: 1750px;
-    max-height: calc(100vh - 200vw);
+    row-gap: 35px;
+    column-gap: 0;
+    min-width: 1vw;
+    min-height: 2100px;
+    max-height: calc(300vh - 400vw);
     justify-content: left;
 }
 
@@ -88,4 +90,10 @@ footer {
 .flex footer {
     position: absolute;
     bottom: 0;
+}
+
+@media (max-width: 690px) {
+    .mansory {
+        max-height: calc(330vh - 400vw);
+    }
 }
