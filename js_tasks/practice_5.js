@@ -56,7 +56,7 @@ export function formatStore(productInfo) {
     for (let i = 0; i < productInfo.length; i + 2) {
         storeInfo[productInfo[i]] = productInfo[i + 1];
     }
-    return Object.entries(storeInfo).map((name, quantity) => `${name} -> ${quantity}`);
+    return Object.entries(storeInfo).map((name, quantity) => `${name} -> ${quantity}`).forEach(e => console.log(e));
 }
 
 /**
