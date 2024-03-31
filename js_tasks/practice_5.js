@@ -51,11 +51,17 @@ export function formatCityInfo(towns) {
  * @param {String[]} productInfo 
  * @returns {String[]}
  */
-export function formatStore(productInfo) {
+export function formatStore(productInfo, orderInfo) {
     const storeInfo = {}
+    
     for (let i = 0; i < productInfo.length; i + 2) {
         storeInfo[productInfo[i]] = productInfo[i + 1];
     }
+
+    for (let i = 0; i < orderInfo.length; i + 2) {
+        storeInfo[orderInfo[i]] = orderInfo[i + 1]   
+    }
+    
     return Object.entries(storeInfo).map((name, quantity) => `${name} -> ${quantity}`).forEach(e => console.log(e));
 }
 
