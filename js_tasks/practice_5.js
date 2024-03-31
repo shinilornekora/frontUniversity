@@ -55,11 +55,15 @@ export function formatStore(productInfo, orderInfo) {
     const storeInfo = {}
     
     for (let i = 0; i < productInfo.length; i + 2) {
-        storeInfo[productInfo[i]] = productInfo[i + 1];
+        storeInfo[productInfo[i]] = Number(productInfo[i + 1]);
     }
 
     for (let i = 0; i < orderInfo.length; i + 2) {
-        storeInfo[orderInfo[i]] = orderInfo[i + 1]   
+        if (storeInfo[orderInfo[i]]) {
+            storeInfo[orderInfo[i]] += Number(orderInfo[i + 1]) 
+        }  
+        
+        storeInfo[orderInfo[i]] = orderInfo[i + 1] 
     }
     
     return Object.entries(storeInfo).map((name, quantity) => `${name} -> ${quantity}`).forEach(e => console.log(e));
