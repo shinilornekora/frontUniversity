@@ -22,7 +22,7 @@ export function changeArrayValues(array) {
 export function commonElements(array_1, array_2) {
     const set = new Set(array_1);
     
-    return array_2.filter((item) => set.has(item));
+    return array_2.filter((item) => set.has(item)).forEach((e) => console.log(e));
 }
 
 /**
