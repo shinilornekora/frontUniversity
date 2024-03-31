@@ -46,7 +46,13 @@ export function makeSquare(n) {
 export function progressBar(number) {
     const array = Array(10).fill('.');
     if (number % 10 === 0) {
-        return `${number}% [${'%'*Math.round(number / 10)}${array.join()}]\nStill loading...`;
+        const lastIndex = Math.round(number / 10);
+        
+        for (let i = 0; i < lastIndex; i++) {
+            array[i] = '#';
+        }
+        
+        return console.log(`${number}% [${array.join('')}]\nStill loading...`);
     }
 
     return 'Still loading...';
