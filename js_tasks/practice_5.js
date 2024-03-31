@@ -41,7 +41,7 @@ export function formatCityInfo(towns) {
     return towns.map(townInfo => townInfo.split(' | ')).map(townInfo => ({
         town: townInfo[0],
         latitude: String(Number(townInfo[1]).toFixed(2)),
-        longtitude: String(Number(townInfo[2]).toFixed(2)),
+        longitude: String(Number(townInfo[2]).toFixed(2)),
     }));
 }
 
