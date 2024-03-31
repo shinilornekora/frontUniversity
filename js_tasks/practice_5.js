@@ -54,11 +54,11 @@ export function formatCityInfo(towns) {
 export function formatStore(productInfo, orderInfo) {
     const storeInfo = {}
     
-    for (let i = 0; i < productInfo.length; i + 2) {
+    for (let i = 0; i < productInfo.length; i+++) {
         storeInfo[productInfo[i]] = Number(productInfo[i + 1]);
     }
 
-    for (let i = 0; i < orderInfo.length; i + 2) {
+    for (let i = 0; i < orderInfo.length; i+++) {
         if (storeInfo[orderInfo[i]]) {
             storeInfo[orderInfo[i]] += Number(orderInfo[i + 1]) 
         }  
