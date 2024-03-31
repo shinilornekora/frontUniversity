@@ -42,7 +42,7 @@ export function formatCityInfo(towns) {
         town: townInfo[0],
         latitude: String(Number(townInfo[1]).toFixed(2)),
         longitude: String(Number(townInfo[2]).toFixed(2)),
-    }));
+    })).forEach(e => console.log(e));
 }
 
 /**
