@@ -6,8 +6,8 @@
  * @param {Number} num_3 
  * @returns {Number}
  */
-export function findMin(num_1, num_2, num_3) {
-    return Math.min(num_1, num_2, num_3);
+export function findMin(num_1, ...nums) {
+    return Math.min(num_1, nums[0], nums[1]);
 }
 
 /**
@@ -27,7 +27,7 @@ export function subtract(num_1, ...rest) {
  * @param {Number} number 
  * @returns {Array}
  */
-export function makeSquare(number) {
+export function makeSquare(n) {
     const matrix = [];
 
     for (let i = 0; i < n; i++) {
