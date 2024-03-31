@@ -21,7 +21,7 @@ export class Employee {
  * @param {String[]} list 
  * @returns {String} 
  */
-export function EmployeeShowcaseProcess(list) {
+export function employeeShowcaseProcess(list) {
     Employee.prototype.toString = function employeeToString() { 
         return `Name: ${this.name} - Personal Number: ${this.id}`;
     }
