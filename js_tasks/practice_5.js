@@ -28,7 +28,7 @@ export function employeeShowcaseProcess(list) {
 
     list = list.map((name) => new Employee(name).toString());
 
-    return list.join('\n');
+    return list.forEach(e => console.log(e));
 }
 
 /**
